@@ -1,4 +1,4 @@
-package Filter;
+package filter;
 import model.User;
 
 import javax.servlet.*;

@@ -32,9 +32,9 @@
 <%=item.getPrice()%><br>
 <a href="/myItems/remove?itemId=<%=item.getId()%>"> Remove</a><br>
 <%if (item.getPicUrl() == null || item.getPicUrl().length() == 0) {%>
-<img src="/image/defaultPic.png" width="10"/>
+<img src="/image/defaultPic.png" width="100"/>
 <% } else {%>
-<img src="/getImage?=<%=item.getPicUrl()%>" width="100"/><br>
+<img src="/image?path=<%=item.getPicUrl()%>" width="100"/><br>
 <% }}%>
 <%} %>
 
