@@ -36,27 +36,4 @@ public class GetImageServlet extends HttpServlet {
 
     }
 
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        String profilePic = "picUrl";
-//        String filePath = IMAGE_PATH + profilePic;
-//        File imageFile = new File(filePath);
-//        if (imageFile.exists()) {
-//            try (FileInputStream inputStream = new FileInputStream(imageFile)) {
-//                resp.setContentType("image/jpeg");
-//                resp.setContentLength((int) imageFile.length());
-//
-//                OutputStream outputStream = resp.getOutputStream();
-//                byte[] buffer = new byte[4096];
-//                int bytesRead = -1;
-//
-//                while ((bytesRead = inputStream.read(buffer)) != -1) {
-//                    outputStream.write(buffer, 0, bytesRead);
-//                }
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
-//    }
-
 }
