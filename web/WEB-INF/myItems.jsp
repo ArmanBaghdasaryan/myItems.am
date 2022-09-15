@@ -31,11 +31,17 @@
 <%=item.getCategory().getName()%><br>
 <%=item.getPrice()%><br>
 <a href="/myItems/remove?itemId=<%=item.getId()%>"> Remove</a><br>
-<%if (item.getPicUrl() == null || item.getPicUrl().length() == 0) {%>
-<img src="/image/defaultPic.png" width="100"/>
-<% } else {%>
-<img src="/image?path=<%=item.getPicUrl()%>" width="100"/><br>
-<% }}%>
+<% if (item.getPicUrl() != null) {
+%>
+<img src="/image?path=<%=item.getPicUrl()%>" width="100"/>
+<%
+} else {
+%>
+<img src="/image/no-image-icon-13.png" width="100"/>
+<%
+        }
+    }
+%>
 <%} %>
 
 

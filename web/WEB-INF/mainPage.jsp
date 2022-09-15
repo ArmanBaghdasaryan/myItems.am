@@ -1,13 +1,7 @@
 <%@ page import="model.Item" %>
 <%@ page import="model.Category" %>
 <%@ page import="java.util.List" %>
-<%@ page import="model.User" %><%--
-  Created by IntelliJ IDEA.
-  User: DELL
-  Date: 9/14/2022
-  Time: 1:42 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="model.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -53,7 +47,7 @@
     <%
     } else {
     %>
-    <img src="/image/defaultPic.png" width="100" />
+    <img src="/image/no-image-icon-13.png" width="100" />
     <%
         }
     %>
